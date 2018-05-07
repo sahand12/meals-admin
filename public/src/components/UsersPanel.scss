@@ -1,0 +1,59 @@
+.rc-UsersPanel {
+  background-color: #ebf1f5;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rc-UsersPanel__box {
+  margin: 20px;
+  padding: 20px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  /* box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.12); */
+
+  h2 {
+    text-align: right;
+    font-weight: normal;
+  }
+}
+
+.rc-UsersPanel__btnGroup {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  button {
+    font-family: 'iranyekan';
+    margin-right: 15px;
+    font-weight: 100;
+  }
+}
+
+.rc-UsersPanel__tableContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  table {
+    border-collapse: initial;
+    width: 100%;
+    overflow-x: scroll;
+
+    td, th {
+      text-align: right;
+    }
+
+    > thead  th {
+      color: black;
+      background-color: lightgray;
+      
+      &:not(last-child) {
+        border-right: 1px solid white;
+      }
+    }
+  }
+}
