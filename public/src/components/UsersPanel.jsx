@@ -18,12 +18,13 @@ const t = {
   mobile: 'موبایل',
   since: 'تاریخ عضویت',
   isAdmin: 'ادمین',
-}
+  cancel: '',
+};
 
 export default class UsersPanel extends Component {
   render() {
     return (
-      <div class='rc-panel'>
+      <div className='rc-panel'>
         <section className="rc-panel__box">
           <h2>{`${t.title}`}</h2>
           <hr/>

@@ -11,21 +11,21 @@ const t = {
   protein: 'پروتین',
   carbs: 'کربوهیدرات',
   fat: 'چربی‌',
-}
+};
 
 export default class ProductsPanel extends Component {
   render() {
     return (
-      <div class='rc-panel'>
+      <div className='rc-panel'>
         <section className="rc-panel__box">
           <h2>{`${t.title}`}</h2>
           <hr/>
           <div className="rc-panel__btnGroup">
-            <button class='pt-button pt-intent-success'>{`${t.newProduct}`}</button>
-            <button class='pt-button'>{`${t.productSearch}`}</button>
+            <button className='pt-button pt-intent-success'>{`${t.newProduct}`}</button>
+            <button className='pt-button'>{`${t.productSearch}`}</button>
           </div>
           <div className="rc-panel__tableContainer">
-            <table class="pt-html-table .modifier">
+            <table className="pt-html-table .modifier">
               <thead>
                 <tr>
                   <th>{`${t.name}`}</th>
