@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import RCTable from './shared/RCTable';
+import * as R from 'ramda';
 
 const t = {
   tableHeadings: {
@@ -9,6 +10,7 @@ const t = {
     mobile: 'موبایل',
     since: 'تاریخ عضویت',
     isAdmin: 'ادمین',
+    edit: 'ویرایش',
   },
   create: 'ایجاد',
   list: 'لیست',
@@ -20,12 +22,12 @@ const t = {
 
 export default class ListPanel extends Component {
   render() {
-    const columns = Object.keys(t.tableHeadings).map(h => t.tableHeadings[h]);
-    const rows = [];
+    const {cols, data, tableClasses} = this.props;
+
     return (
       <div className="rc-panel__tableContainer">
-        <RCTable columns={columns} rows={rows}/>
-        <table className="pt-html-table .modifier">
+        <RCTable cols={cols} data={data} classes={tableClasses}/>
+        <table className="pt-html-table">
         </table>
       </div>
     );

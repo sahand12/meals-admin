@@ -15,6 +15,8 @@ const t = {
   confirmPassword: 'تکرار رمزعبور',
   isAdmin: 'ادمین',
   createNewUser: 'ایجاد کاربر جدید',
+  cancel: 'لغو',
+  or: 'یا',
 };
 
 export default class CreatePanel extends Component {
@@ -54,6 +56,9 @@ export default class CreatePanel extends Component {
 
             <div className='rc-CreatePanel__form__btnContainer rc-children--right'>
               <button className='rc-btn rc-green' type='submit'>{`${t.createNewUser}`}</button>
+              {/*<button className='rc-btn rc-default' type='button'>{`${t.createNewUser}`}</button>*/}
+              <span style={{margin: '20px'}}>{`${t.or}`}</span>
+              <a href="#">{`${t.cancel}`}</a>
             </div>
           </form>
         </section>

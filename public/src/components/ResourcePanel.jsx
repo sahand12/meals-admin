@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Tab, Tabs} from '@blueprintjs/core';
 import './ResourcePanel.css';
 import './rc-panel.css';
-import UsersPanel from './UsersPanel';
+import UsersPanel from './users/panel/UsersPanel';
 import ProductsPanel from './ProductsPanel';
 import PurchasesPanel from './PurchasesPanel';
 import MenuPanel from './MenuPanel';
